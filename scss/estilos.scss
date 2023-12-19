@@ -133,17 +133,11 @@ section {
         object-fit: cover;
         justify-content: center;
     }
+    .descripcion {
+        text-align: center;
+        color: rgb(8, 170, 170);
 }
-
-.galeria-foto img {
-    width: 60%;
-    height: 60%;
-    object-fit: cover;
-    justify-content: center;}
-
-.descripción {
-    text-align: center;
-    color: rgb(8, 170, 170);}
+}
 /* fin formato para pagina productos*/
 
 /* formato CONTACTO*/
@@ -158,37 +152,37 @@ form {
 /* inicio - estilos para mi footer*/
 
 .footer{
-    background-color: rgba(45, 145, 175, 0.829); }
+    background-color: rgba(45, 145, 175, 0.829); 
+    .container {
+        text-align: center;
+        font-size: 30px;
+        justify-content: center;}
+    
+    .footer-row {
+        text-align: center;
+        display: flex;
+        justify-content: space-between; }
 
-.container {
-    text-align: center;
-    font-size: 30px;
-    justify-content: center;}
+    .footer-links h4 {
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+        color: #f2f2f2;
+        margin: 10px;}
 
-.footer-row {
-    text-align: center;
-    display: flex;
-    justify-content: space-between; }
+    .footer-links {
+        width: 25%;
+        padding: 0 15px;}
 
-.footer-links h4 {
-    font-size: 20px;
-    text-align: center;
-    justify-content: center;
-    color: #f2f2f2;
-    margin: 10px;}
+    .footer-links ul li a {
+        font-size: 15px;    
+        color:#fff;
+        text-align: left;}
 
-.footer-links {
-    width: 25%;
-    padding: 0 15px;}
-
-.footer-links ul li a {
-    font-size: 15px;    
-    color:#fff;
-    text-align: left;}
-
-.redes-sociales a {
-    font-size: 25px;
-    display: inline-block; }
+    .redes-sociales a {
+        font-size: 25px;
+        display: inline-block;}
+    }
 /* fin - estilos para mi footer*/
 
 /* media query*/
