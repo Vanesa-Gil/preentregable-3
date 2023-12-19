@@ -1,2 +1,276 @@
+@charset "UTF-8";
+/*Inicio Estilos globales*/
+* {
+  font-family: "Playpen Sans", cursive;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Fin Estilos globales*/
+/* inicio - estilos para mi header*/
+.container-fluid {
+  background: linear-gradient(300deg, rgb(92, 139, 240) 0%, rgb(115, 229, 233) 100%);
+  font-size: 18px;
+  padding: 30px;
+}
+
+header nav a:hover {
+  color: #ffffff !important;
+  background: #47def1;
+  border-radius: 30px;
+}
+
+header nav li {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 20px;
+  line-height: normal;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 80px;
+}
+
+.navbar-nav li a {
+  color: rgb(203, 214, 224);
+}
+
+/* fin - estilos para mi header*/
+/* inicio - estilos para mi body*/
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* inicio - estilos para mi main*/
+h1 {
+  text-align: center;
+  margin: 20px;
+  font-size: 25px;
+}
+
+h3 {
+  margin: 20px;
+  font-size: 18px;
+}
+
+.parrafo {
+  margin: 20px;
+  padding: 5px;
+  font-size: 18px;
+  left: 30%;
+  top: 30%;
+  text-align: justify;
+}
+
+.comprar {
+  margin: 30px;
+  padding: 30px;
+  font-size: 15px;
+  left: 30%;
+  top: 30%;
+  text-align: justify;
+}
+
+section {
+  margin: 20px;
+}
+
+.carousel-item img {
+  position: relative;
+  width: 250%;
+  height: 910px;
+}
+
+/* inicio formato para galeria de inicio*/
+.card-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 2Rem;
+}
+
+.card:hover {
+  transform: scale(0.8);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 2Rem;
+  position: relative;
+  margin: 50px;
+  text-align: center;
+  box-shadow: rgb(102, 188, 214) 0px 5px 15px;
+  width: 260px;
+  height: 250px;
+}
+.card img {
+  width: 70%;
+  height: 180px;
+  margin: 20 15px;
+  box-shadow: color(srgb rgb(180, 35, 35) green blue);
+}
+.card .descripcion {
+  padding: 15px;
+  text-align: center;
+}
+
+/* fin formato para galeria de inicio*/
+/* inicio formato para pagina productos*/
+.galeria-productos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 30rem);
+  text-align: center;
+}
+.galeria-productos .foto {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+  box-shadow: rgb(102, 188, 214) 0px 5px 15px;
+  text-align: center;
+  margin: 50px;
+}
+.galeria-productos img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.galeria-foto img {
+  width: 60%;
+  height: 60%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.descripción {
+  text-align: center;
+  color: rgb(8, 170, 170);
+}
+
+/* fin formato para pagina productos*/
+/* formato CONTACTO*/
+form {
+  border: 1px;
+  border-radius: 5px;
+  padding: 50px;
+  width: 300px;
+}
+
+/* FIN formato CONTACTO*/
+/* fin - estilos para mi main*/
+/* inicio - estilos para mi footer*/
+.footer {
+  background-color: rgba(45, 145, 175, 0.829);
+}
+
+.container {
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+}
+
+.footer-row {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-links h4 {
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  color: #f2f2f2;
+  margin: 10px;
+}
+
+.footer-links {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-links ul li a {
+  font-size: 15px;
+  color: #fff;
+  text-align: left;
+}
+
+.redes-sociales a {
+  font-size: 25px;
+  display: inline-block;
+}
+
+/* fin - estilos para mi footer*/
+/* media query*/
+@media screen and (max-width: 768px) {
+  .footer-links ul li a {
+    font-size: 10px;
+    display: flex;
+  }
+  .redes-sociales a {
+    font-size: 10px;
+  }
+  .footer-links h4 {
+    font-size: 10px;
+  }
+  .card img {
+    width: 70%;
+  }
+  .card-group {
+    display: grid;
+    grid-template-columns: none;
+  }
+  .galeria-productos {
+    display: grid;
+    grid-template-columns: none;
+  }
+  .galeria-foto {
+    width: 40%;
+    height: 50%;
+  }
+  .comprar {
+    font-size: 10px;
+  }
+  .parrafo {
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  h1 {
+    font-size: 12px;
+  }
+  .carousel-item img {
+    width: 50%;
+    height: 50%;
+  }
+  .card:hover {
+    transform: none;
+  }
+}
 
 /*# sourceMappingURL=estilos.css.map */
